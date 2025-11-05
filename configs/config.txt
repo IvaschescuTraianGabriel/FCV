@@ -1,0 +1,14 @@
+# Pixel/color/filters
+brightness_manual delta=30
+contrast alpha=1.2 beta=5
+blur ksize=5
+
+# Geometric transforms
+flip_horizontal_manual
+flip direction=vertical
+rotate angle=15
+resize scale=0.5
+
+# Chains
+contrast alpha=1.2 beta=0 | resize scale=0.7
+brightness_manual delta=-40 | flip direction=horizontal
